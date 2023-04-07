@@ -1,0 +1,35 @@
+progress::-webkit-progress-bar {
+    background-color: rgb(18, 24, 18);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 100%;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(193, 245, 193);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    height: 2rem;
+    width: 100%;
+    transition: width 1s ease-in-out;
+    animation: progress 1s ease-in-out;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
+}
